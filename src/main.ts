@@ -21,7 +21,7 @@ async function main () {
             );
         });
         products.forEach((product) => {
-            console.log("");
+           
             product.displayDetails();
 
             const tax = calculateTax(product);
@@ -31,9 +31,10 @@ async function main () {
             console.log (`Product Price with tax (after discount): $${Price.toFixed(2)}`);
         });
         
-    }
+    
 } catch (error) {
     handleError(error);
+}
 }
 
 main();
